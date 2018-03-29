@@ -1,0 +1,118 @@
+html {
+  color: #222;
+  font-size: 16px;
+}
+
+body {
+  background-image: url(./img/background-min@2x.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: lightgreen;
+  text-shadow: 2px 2px black;
+  font-size: 1.4em;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: lightcoral;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgreen;
+  text-decoration: none;
+}
+
+.flex-column-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+
+.flex-row-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+}
+
+.flex-item {
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.box-background {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 24px;
+}
+
+.margin-top {
+  margin-top: 8px;
+}
+
+.lightcoral {
+  color: lightcoral;
+  text-decoration: none;
+}
+
+.CallUsLink {
+  padding: 8px;
+}
+
+.googlemaps {
+  width: 100%;
+  height: 400px;
+  background: grey;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.logga {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 1000px) {
+  .flex-row-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+}
