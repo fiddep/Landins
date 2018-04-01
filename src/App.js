@@ -85,8 +85,7 @@ const AsyncMap = Loadable({
 
 const CallUsLink = ({ number }) => (
   <a href={`tel:${number}`}>
-    <i className="fas fa-phone" />
-    {number}
+    <i className="fas fa-phone" /> {number}
   </a>
 );
 
@@ -102,23 +101,11 @@ const InstagramLink = () => (
   </a>
 );
 
-const OpenHoursAffie = () => {
-  const isFirstOfApril = Date.now() > Date.UTC(2018, 3, 1, 1, 0);
-
-  if (isFirstOfApril) {
-    return (
-      <span className="lightcoral" id="openhoursAffie">
-        vardagar 9.00-18.00. Lördagar 9.00-13.00
-      </span>
-    );
-  } else {
-    return (
-      <span className="lightcoral" id="openhoursAffie">
-        vardagar 10.00-18.00. Lördagar 11.00-14.00
-      </span>
-    );
-  }
-};
+const OpenHoursAffie = () => (
+  <span className="lightcoral" id="openhoursAffie">
+    vardagar 10.00-18.00. Lördagar 11.00-14.00
+  </span>
+);
 
 const OpenHoursBength = () => (
   <span className="lightcoral" id="openhoursBength">
