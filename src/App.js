@@ -3,6 +3,8 @@ import Loadable from "react-loadable";
 
 import Loading from "./Loading";
 
+import Map from "./Map";
+
 import "./App.css";
 
 import butik from "./img/butik-min.jpg";
@@ -24,7 +26,17 @@ class App extends Component {
         <div className="flex-row-container box-background">
           <div className="flex-item">
             <h1>Besök oss här!</h1>
-            <AsyncMap />
+            <div
+              style={{
+                dispaly: "block",
+                width: "400px",
+                height: "400px",
+                background: "grey",
+                textShadow: "none"
+              }}
+            >
+              <Map />
+            </div>
           </div>
           <div className="flex-item">
             <h1>Kontakta oss!</h1>
@@ -77,11 +89,6 @@ class App extends Component {
     );
   }
 }
-
-const AsyncMap = Loadable({
-  loader: () => import("./Map"),
-  loading: Loading
-});
 
 const CallUsLink = ({ number }) => (
   <a href={`tel:${number}`}>
